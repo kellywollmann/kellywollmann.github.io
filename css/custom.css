@@ -1,0 +1,10 @@
+.contactFormContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.img-profile {
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
