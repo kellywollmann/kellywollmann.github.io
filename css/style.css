@@ -867,6 +867,14 @@ ul.list-arrow li:before {
     width: 1.3em;
 }
 
+.timeline-not-inverted ul.list-arrow li:before {
+    font-family: Ionicons;
+    content: "\f3d3";
+    float: left;
+    width: 1.3em;
+    margin-left: 140px;
+}
+
 ul.list-arrow-color li:before {
     color: #8980fe;
 }
@@ -1865,16 +1873,17 @@ span.portfolio-hover {
     -moz-transition: opacity 500ms;
     -o-transition: opacity 500ms;
     transition: opacity 500ms;
-    background: #6819e8;
+    background: rgba(0, 0, 0, 0.5);
     /* Old browsers */
-    background: -moz-linear-gradient(left, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%);
+    /* background: -moz-linear-gradient(left, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%); */
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%);
+    /* background: -webkit-linear-gradient(left, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%); */
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%);
+    /* background: linear-gradient(to right, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%); */
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6819e8', endColorstr='#6980f2', GradientType=1);
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6819e8', endColorstr='#6980f2', GradientType=1); */
     /* IE6-9 */
+
 }
 
 .portfolio-image-holder {

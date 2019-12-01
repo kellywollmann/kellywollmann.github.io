@@ -3,16 +3,16 @@
 
 <head>
 	<meta charset="utf-8" />
-	<meta name="author" content="Denis Samardjiev" />
-	<meta name="description" content="Particles - Personal + Agency Template">
+	<meta name="author" content="Adley W. Damaceno" />
+	<meta name="description" content="Kelly Wollmann Portfolio">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Particles - Personal + Agency Template</title>
+	<title>Kelly Wollmann</title>
 
 	<!-- Royal Preloader CSS -->
 	<link href="css/royal_preloader.css" rel="stylesheet">
 
 	<!-- jQuery Files -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.3.1.0.min.js"></script>
 
 	<!-- Parallax File -->
 	<script type="text/javascript" src="js/parallax.min.js"></script>
@@ -65,7 +65,10 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand scroll-link" href="#home" data-id="home">Kelly Wollmann</a>
+						<a class="navbar-brand scroll-link d-flex-centered" href="#home" data-id="home">
+							<img src="./images/filmmaker-outline.png" class="img-logo-size" />
+							<span class="logo-text-style ml-5px">Kelly Wollmann</span>
+						</a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,6 +78,7 @@
 							<li><a href="#profile" data-id="profile" class="scroll-link">Perfil</a></li>
 							<li><a href="#services" data-id="services" class="scroll-link">Atuação</a></li>
 							<li><a href="#work" data-id="work" class="scroll-link">Trabalhos</a></li>
+							<li><a href="#timeline" data-id="timeline" class="scroll-link">Timeline</a></li>
 							<li><a href="#contact" data-id="contact" class="scroll-link">Contato</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
@@ -95,7 +99,9 @@
 						<strong>Kelly Wollmann</strong>.
 					</h1>
 					<hr class="bottomReveal">
-					<p class="bottomReveal">sample text</p>
+					<p class="bottomReveal">Bem-vindo, sinta-se em casa!
+						<br /> Navegue pelo site e conheça o meu trabalho.
+						<br /> Se despertar o interesse, entre em contato.</p>
 					<a href="#profile" data-id="profile" class="scroll-link">
 						<div class="scroll-indicator rotateBottomReveal">
 							<span class="ion-mouse"></span><br>
@@ -122,9 +128,7 @@
 			</div><!-- /.row -->
 			<div class="row">
 				<div class="col-sm-4">
-					<img alt="Kelly's Photo"
-						src="http://scontent.fbsb3-1.fna.fbcdn.net/v/t31.0-8/s960x960/23511089_1471930799589685_2299056253957950224_o.jpg?_nc_cat=100&_nc_ohc=ykhH7F64fIsAQkzXTWabEnRiW36P25-9gm2QiUVmeTdJ_u9a4ujtu70CA&_nc_ht=scontent.fbsb3-1.fna&oh=d8c5e75e17f0a037f217f98a9ce6bf0b&oe=5E465E34"
-						class="img-profile">
+					<img alt="Kelly's Photo" src="./images/profile.jpg" class="img-profile">
 					<div class="profile-box">
 						<ul class="list-unstyled">
 							<li><strong>Name:</strong> Kelly Wollmann Damaceno</li>
@@ -204,7 +208,7 @@
 				</div><!-- /.column -->
 			</div><!-- /.row -->
 			<br />
-			<div class="row text-center">
+			<div class="row text-center mt-10px">
 				<a href="#services" data-id="services" class="scroll-link">
 					<div class="scroll-indicator rotateBottomReveal">
 						<span class="ion-mouse"></span><br>
@@ -275,6 +279,14 @@
 					</div>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
+			<div class="row text-center mt-10px">
+				<a href="#work" data-id="work" class="scroll-link">
+					<div class="scroll-indicator rotateBottomReveal">
+						<span class="ion-mouse"></span><br>
+						<span class="ion-android-arrow-down arrow-scroll-indicator"></span>
+					</div>
+				</a>
+			</div>
 		</div><!-- /.container -->
 	</section><!-- /.section -->
 	<!-- End Services -->
@@ -293,207 +305,303 @@
 			<div class="row">
 				<div class="col-xs-12 text-center mb50">
 					<!-- Filter Buttons -->
-					<button class="filter btn btn-default btn-category btn-lg" data-filter="all">All</button>
-					<button class="filter btn btn-default btn-category btn-lg" data-filter=".identity">Identity</button>
-					<button class="filter btn btn-default btn-category btn-lg" data-filter=".print">Print</button>
-					<button class="filter btn btn-default btn-category btn-lg" data-filter=".graphics">Graphics</button>
-					<button class="filter btn btn-default btn-category btn-lg" data-filter=".web">Web</button>
-
-					<!-- Sort Buttons -->
-					<button class="sort btn btn-default btn-sort btn-lg" data-sort="my-order:asc"><span
-							class="ion-ios-plus-empty"></span></button>
-					<button class="sort btn btn-default btn-sort btn-lg" data-sort="my-order:desc"><span
-							class="ion-ios-minus-empty"></span></button>
+					<button class="filter btn btn-default btn-category btn-lg" data-filter="all">Todos</button>
+					<button class="filter btn btn-default btn-category btn-lg" data-filter=".photo">Fotos</button>
+					<button class="filter btn btn-default btn-category btn-lg" data-filter=".video">Vídeos</button>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
 			<div id="thework">
-				<!-- Item 1 -->
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics"
-					data-my-order="3">
-					<div class="portfolio-image-holder"><img
-							src="http://www.dropbox.com/sh/ekree9crwsqkb0z/AACgVZYb4So0BsKUTdIvRh6Da?dl=0&preview=Dalila-4.jpg"
-							alt="1" class="img-responsive portfolio-image"></div>
-					<span class="portfolio-badge badge">Graphics</span>
+
+				<!-- foto 1 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="1">
+					<div class="portfolio-image-holder"><img src="./images/photos/1.jpg" alt="1"
+							class="img-responsive portfolio-image"></div>
+					<span class="portfolio-badge badge">Ensaio Dalila</span>
 					<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span
-										class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/1.jpg" class="zoom" title="Equipt Design">
+							<a href="./images/photos/1.jpg" class="zoom" title="Foto 1">
 								<span class="portfolio-links"><span
 										class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Equipt Design</span>
+							<span class="project-title no-margin-bottom mt10"></span>
 						</span>
 					</span>
 				</div><!-- /.column -->
 
-				<!-- Item 2 -->
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix print identity"
-					data-my-order="6">
-					<div class="portfolio-image-holder"><img src="images/work/2.jpg" alt="2"
+				<!-- foto 2 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="2">
+					<div class="portfolio-image-holder"><img src="./images/photos/2.jpg" alt="1"
 							class="img-responsive portfolio-image"></div>
-					<span class="portfolio-badge badge">Print + Identity</span>
+					<span class="portfolio-badge badge">Ensaio Dalila</span>
 					<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span
-										class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/2.jpg" class="zoom" title="Goodman's Burger">
+							<a href="./images/photos/2.jpg" class="zoom" title="Foto 1">
 								<span class="portfolio-links"><span
 										class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Goodman's Burger</span>
+							<span class="project-title no-margin-bottom mt10"></span>
 						</span>
 					</span>
 				</div><!-- /.column -->
 
-				<!-- Item 3 -->
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix identity"
-					data-my-order="4">
-					<div class="portfolio-image-holder"><img src="images/work/3.jpg" alt="3"
+				<!-- foto 3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="3">
+					<div class="portfolio-image-holder"><img src="./images/photos/4.jpg" alt="1"
 							class="img-responsive portfolio-image"></div>
-					<span class="portfolio-badge badge">Print</span>
+					<span class="portfolio-badge badge">Ensaio Dalila</span>
 					<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span
-										class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/3.jpg" class="zoom" title="Paper Mockup">
+							<a href="./images/photos/4.jpg" class="zoom" title="Foto 1">
 								<span class="portfolio-links"><span
 										class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Paper Mockup</span>
+							<span class="project-title no-margin-bottom mt10"></span>
 						</span>
 					</span>
 				</div><!-- /.column -->
 
-				<!-- Item 4 -->
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics"
-					data-my-order="5">
-					<div class="portfolio-image-holder"><img src="images/work/4.jpg" alt="4"
+				<!-- foto 4 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="4">
+					<div class="portfolio-image-holder"><img src="./images/photos/5.jpg" alt="1"
 							class="img-responsive portfolio-image"></div>
-					<span class="portfolio-badge badge">Graphics</span>
+					<span class="portfolio-badge badge">Ensaio Sandri e Gabriel</span>
 					<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span
-										class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/4.jpg" class="zoom" title="Simple Pleasure">
+							<a href="./images/photos/5.jpg" class="zoom" title="Foto 1">
 								<span class="portfolio-links"><span
 										class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Simple Pleasure</span>
+							<span class="project-title no-margin-bottom mt10"></span>
 						</span>
 					</span>
 				</div><!-- /.column -->
 
-				<!-- Item 5 -->
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix print identity"
-					data-my-order="2">
-					<div class="portfolio-image-holder"><img src="images/work/5.jpg" alt="5"
+				<!-- foto 5 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="5">
+					<div class="portfolio-image-holder"><img src="./images/photos/7.jpg" alt="1"
 							class="img-responsive portfolio-image"></div>
-					<span class="portfolio-badge badge">Print + Identity</span>
+					<span class="portfolio-badge badge">Ensaio Sandri e Gabriel</span>
 					<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span
-										class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/5.jpg" class="zoom" title="Wine Bottles">
+							<a href="./images/photos/7.jpg" class="zoom" title="Foto 1">
 								<span class="portfolio-links"><span
 										class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Wine Bottles</span>
+							<span class="project-title no-margin-bottom mt10"></span>
 						</span>
 					</span>
 				</div><!-- /.column -->
 
-				<!-- Item 6 -->
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix web" data-my-order="1">
-					<div class="portfolio-image-holder"><img src="images/work/6.jpg" alt="6"
+				<!-- foto 6 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="6">
+					<div class="portfolio-image-holder"><img src="./images/photos/8.jpg" alt="1"
 							class="img-responsive portfolio-image"></div>
-					<span class="portfolio-badge badge">Web</span>
+					<span class="portfolio-badge badge">Ensaio Sandri e Gabriel</span>
 					<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span
-										class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/6.jpg" class="zoom" title="Web UI">
+							<a href="./images/photos/8.jpg" class="zoom" title="Foto 1">
 								<span class="portfolio-links"><span
 										class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Web UI</span>
+							<span class="project-title no-margin-bottom mt10"></span>
 						</span>
 					</span>
 				</div><!-- /.column -->
 
-				<!-- Item 7 -->
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics print"
-					data-my-order="9">
-					<div class="portfolio-image-holder"><img src="images/work/7.jpg" alt="7"
+				<!-- foto 7 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="7">
+					<div class="portfolio-image-holder"><img src="./images/photos/9.jpg" alt="1"
 							class="img-responsive portfolio-image"></div>
-					<span class="portfolio-badge badge">Graphics + Print</span>
+					<span class="portfolio-badge badge">Ensaio Sandri e Gabriel</span>
 					<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span
-										class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/7.jpg" class="zoom" title="Hello World">
+							<a href="./images/photos/9.jpg" class="zoom" title="Foto 1">
 								<span class="portfolio-links"><span
 										class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Hello World</span>
+							<span class="project-title no-margin-bottom mt10"></span>
 						</span>
 					</span>
 				</div><!-- /.column -->
 
-				<!-- Item 8 -->
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix web" data-my-order="7">
-					<div class="portfolio-image-holder"><img src="images/work/8.jpg" alt="8"
+				<!-- foto 8 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="8">
+					<div class="portfolio-image-holder"><img src="./images/photos/10.jpg" alt="1"
 							class="img-responsive portfolio-image"></div>
-					<span class="portfolio-badge badge">Web</span>
+					<span class="portfolio-badge badge">Ensaio Sandri e Gabriel</span>
 					<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span
-										class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/8.jpg" class="zoom" title="We Create Mobile">
+							<a href="./images/photos/10.jpg" class="zoom" title="Foto 1">
 								<span class="portfolio-links"><span
 										class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">We Create Mobile</span>
+							<span class="project-title no-margin-bottom mt10"></span>
 						</span>
 					</span>
 				</div><!-- /.column -->
 
-				<!-- Item 9 -->
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix web" data-my-order="8">
-					<div class="portfolio-image-holder"><img src="images/work/9.jpg" alt="9"
+				<!-- foto 9 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="9">
+					<div class="portfolio-image-holder"><img src="./images/photos/11.jpg" alt="1"
 							class="img-responsive portfolio-image"></div>
-					<span class="portfolio-badge badge">Web</span>
+					<span class="portfolio-badge badge">Ensaio Sandri e Gabriel</span>
 					<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span
-										class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/9.jpg" class="zoom" title="Captain da Ship">
+							<a href="./images/photos/11.jpg" class="zoom" title="Foto 1">
 								<span class="portfolio-links"><span
 										class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Captain da Ship</span>
+							<span class="project-title no-margin-bottom mt10"></span>
 						</span>
 					</span>
 				</div><!-- /.column -->
+
+				<!-- foto 10 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="10">
+					<div class="portfolio-image-holder"><img src="./images/photos/12.jpg" alt="1"
+							class="img-responsive portfolio-image"></div>
+					<span class="portfolio-badge badge">Ensaio</span>
+					<span class="portfolio-hover">
+						<span>
+							<a href="./images/photos/12.jpg" class="zoom" title="Foto 1">
+								<span class="portfolio-links"><span
+										class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10"></span>
+						</span>
+					</span>
+				</div><!-- /.column -->
+
+				<!-- foto 11 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="11">
+					<div class="portfolio-image-holder"><img src="./images/photos/13.jpg" alt="1"
+							class="img-responsive portfolio-image"></div>
+					<span class="portfolio-badge badge">Ensaio</span>
+					<span class="portfolio-hover">
+						<span>
+							<a href="./images/photos/13.jpg" class="zoom" title="Foto 1">
+								<span class="portfolio-links"><span
+										class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10"></span>
+						</span>
+					</span>
+				</div><!-- /.column -->
+
+				<!-- foto 12 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix photo" data-my-order="12">
+					<div class="portfolio-image-holder"><img src="./images/photos/14.jpg" alt="1"
+							class="img-responsive portfolio-image"></div>
+					<span class="portfolio-badge badge">Ensaio</span>
+					<span class="portfolio-hover">
+						<span>
+							<a href="./images/photos/14.jpg" class="zoom" title="Foto 1">
+								<span class="portfolio-links"><span
+										class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10"></span>
+						</span>
+					</span>
+				</div><!-- /.column -->
+
+
+				<!-- video 1 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix video" data-my-order="13">
+					<div class="portfolio-image-holder">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/E1UKjPTRB38" frameborder="1"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div><!-- /.column -->
+
+				<!-- video 2 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix video" data-my-order="14">
+					<div class="portfolio-image-holder">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/wHZi0K6LJNU" frameborder="1"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div><!-- /.column -->
+
+				<!-- video 3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix video" data-my-order="15">
+					<div class="portfolio-image-holder">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/NJH1_yWvME8" frameborder="1"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div><!-- /.column -->
+
+				<!-- video 4 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix video" data-my-order="16">
+					<div class="portfolio-image-holder">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/9Eo3YEKcavQ" frameborder="1"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div><!-- /.column -->
+
+				<!-- video 5 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix video" data-my-order="17">
+					<div class="portfolio-image-holder">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/wEbjBcWnaKo" frameborder=" 1"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div><!-- /.column -->
+
+				<!-- video 6 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix video" data-my-order="18">
+					<div class="portfolio-image-holder">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/U735iTFhBA0" frameborder="1"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div><!-- /.column -->
+
+				<!-- video 7 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix video" data-my-order="19">
+					<div class="portfolio-image-holder">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/ad7UDKU1nzQ" frameborder="1"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div><!-- /.column -->
+
+				<!-- video 8 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix video" data-my-order="20">
+					<div class="portfolio-image-holder">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/BqxHHraKmSE" frameborder="1"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div><!-- /.column -->
+
 			</div><!-- /.row -->
+			<div class="row text-center mt-10px">
+				<a href="#timeline" data-id="timeline" class="scroll-link">
+					<div class="scroll-indicator rotateBottomReveal">
+						<span class="ion-mouse"></span><br>
+						<span class="ion-android-arrow-down arrow-scroll-indicator"></span>
+					</div>
+				</a>
+			</div>
 		</div><!-- /.container -->
 	</section><!-- /.section -->
 	<!-- Begin Work -->
@@ -512,7 +620,7 @@
 					<ul class="timeline pb80">
 
 						<!-- Item 1 -->
-						<li>
+						<li class="timeline-not-inverted">
 							<div class="timeline-image scaleReveal"><img alt="" class="img-circle img-responsive"
 									src="images/youtube.png"></div>
 							<div class="timeline-panel leftReveal">
@@ -521,10 +629,10 @@
 									<h4 class="subheading">Youtuber - Autônoma</h4>
 								</div>
 								<div class="timeline-body">
-									<ul>
-										<li>Criação de roteiros;</li>
-										<li>Produção audiovisual; e</li>
-										<li>Edição e finalização.</li>
+									<ul class="list-arrow list-arrow-color no-margin text-small">
+										<li>Criação de roteiros</li>
+										<li>Produção audiovisual</li>
+										<li>Edição e finalização</li>
 									</ul>
 								</div>
 							</div>
@@ -540,17 +648,18 @@
 									<h4 class="subheading">Anvisa - Estagiária</h4>
 								</div>
 								<div class="timeline-body">
-									<ul>
-										<li>Atualização das redes sociais;</li>
-										<li>Revisão e edição de texto; e</li>
-										<li>Produção e edição de vídeo.</li>
+									<ul class="list-arrow list-arrow-color no-margin text-small">
+
+										<li>Atualização das redes sociais</li>
+										<li>Revisão e edição de texto</li>
+										<li>Produção e edição de vídeo</li>
 									</ul>
 								</div>
 							</div>
 						</li>
 
 						<!-- Item 3 -->
-						<li>
+						<li class="timeline-not-inverted">
 							<div class="timeline-image scaleReveal"><img alt="" class="img-circle img-responsive"
 									src="images/stm.png"></div>
 							<div class="timeline-panel leftReveal">
@@ -559,10 +668,11 @@
 									<h4 class="subheading">Superior Tribunal Militar - Estagiária</h4>
 								</div>
 								<div class="timeline-body">
-									<ul>
-										<li>Reportagem e entrevistas;</li>
-										<li>Produção de notícias; e</li>
-										<li>Produção e edição de vídeo.</li>
+									<ul class="list-arrow list-arrow-color no-margin text-small">
+
+										<li>Reportagem e entrevistas</li>
+										<li>Produção de notícias</li>
+										<li>Produção e edição de vídeo</li>
 									</ul>
 								</div>
 							</div>
@@ -578,9 +688,10 @@
 									<h4 class="subheading">Filmmaker - Freelancer</h4>
 								</div>
 								<div class="timeline-body">
-									<ul>
-										<li>Produção de vídeos; e</li>
-										<li>Edição de vídeos.</li>
+									<ul class="list-arrow list-arrow-color no-margin text-small">
+
+										<li>Produção de vídeos</li>
+										<li>Edição de vídeos</li>
 									</ul>
 								</div>
 							</div>
@@ -589,6 +700,14 @@
 					</ul>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
+			<div class="row text-center mt-10px">
+				<a href="#contact" data-id="contact" class="scroll-link">
+					<div class="scroll-indicator rotateBottomReveal">
+						<span class="ion-mouse"></span><br>
+						<span class="ion-android-arrow-down arrow-scroll-indicator"></span>
+					</div>
+				</a>
+			</div>
 		</div><!-- /.container -->
 	</section><!-- /.section -->
 	<!-- End Timeline -->
