@@ -31,3 +31,16 @@
 .mt-10px {
     margin-top: 10px;
 }
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    font-size: 40px;
+    ;
+}
+
+.btn-link {
+    color: #8980fe;
+}
