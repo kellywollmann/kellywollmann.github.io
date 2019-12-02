@@ -44,3 +44,28 @@
 .btn-link {
     color: #8980fe;
 }
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .timeline-not-inverted li::before {
+        margin-left: -15px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .timeline-not-inverted li::before {
+        margin-left: 50px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .timeline-not-inverted li::before {
+        margin-left: 130px;
+    }
+}

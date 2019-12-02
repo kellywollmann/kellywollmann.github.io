@@ -867,14 +867,6 @@ ul.list-arrow li:before {
     width: 1.3em;
 }
 
-.timeline-not-inverted ul.list-arrow li:before {
-    font-family: Ionicons;
-    content: "\f3d3";
-    float: left;
-    width: 1.3em;
-    margin-left: 140px;
-}
-
 ul.list-arrow-color li:before {
     color: #8980fe;
 }
